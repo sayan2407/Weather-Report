@@ -22,11 +22,6 @@ function Home() {
 
     const [cityname, setCityName] = useState(null);
 
-
-    const API_KEY = "0b099ae6d0e7471799cdcb6cf04b0db3";
-
-
-
     useEffect(()=>{
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition((position) => {
